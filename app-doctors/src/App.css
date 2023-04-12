@@ -1,27 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&family=Noto+Sans&display=swap");
 body {
   font-family: "Cairo", sans-serif !important;
-  font-weight: 600 !important;
   background-color: rgb(245, 245, 245) !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* opacity: 300%; */
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.201), rgba(0, 0, 0, 0.674)),
+   url("./Components/imgHome.jpeg"); 
 }
 
-.doctors{
+/* .imgHome {
+  max-width: 100%;
+  height: 400px;
+
+} */
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.titleImg {
+  position: absolute;
+  top: 10%;
+  right: 60%;
+  color: rgb(59, 61, 80);
+  font-size: 100px !important;
+  z-index: -1;
+  position: fixed
+}
+
+.doctors {
   margin: 10%;
+  margin-top: 30%;
 }
 
+.doctors h2{
+ color: white;
+ border-bottom: 3px solid #2c2c29;
+ border-radius: 5px;
+}
 .table-responsive {
-  color: white !important;
   background-color: #a8b4be;
-  padding: 1em;
+  padding: 2em;
   border-radius: 8px;
-  
 }
 tr.hide-table-padding td {
   padding: 0;
 }
 
+.color-font {
+  color: white !important;
+}
 
+.selected {
+  background-color: #f7c4c4;
+}
 
+table {
+  padding: 0px;
+  border-collapse: collapse;
+}
 
-
-
+.tableAppointment {
+  background-color: #dff2e2;
+}

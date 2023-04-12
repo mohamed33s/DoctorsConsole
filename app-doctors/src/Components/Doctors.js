@@ -1,5 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/js/src/collapse.js";
 import Accordion from "react-bootstrap/Accordion";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -22,7 +20,7 @@ export default function Doctors() {
       <div className="table-responsive">
         <table className="table">
           <thead>
-            <tr>
+            <tr className="color-font">
               <th scope="col">ID</th>
               <th scope="col">الاسم</th>
               <th scope="col">التخصص</th>
@@ -34,12 +32,12 @@ export default function Doctors() {
             {itemsDoctors
               .sort((a, b) => b.review - a.review)
               .map((item) => (
-                <tr key={item.id}>
+                <tr className="color-font" key={item.id}>
                   <td>{item.id}</td>
                   <td>{item.name}</td>
                   <td>{item.position}</td>
                   <td>{item.review}</td>
-                  <Accordion defaultActiveKey={["0"]} alwaysOpen>
+                  <Accordion defaultActiveKey={["1"]} alwaysOpen>
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>
                         <td>المواعيد</td>
