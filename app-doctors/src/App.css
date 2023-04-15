@@ -5,21 +5,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* opacity: 300%; */
-  background-image:
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.201), rgba(0, 0, 0, 0.674)),
-   url("./Components/imgHome.jpeg"); 
-}
-
-/* .imgHome {
-  max-width: 100%;
-  height: 400px;
-
-} */
-
-img {
-  width: 100%;
-  height: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.201),
+      rgba(0, 0, 0, 0.674)
+    ),
+    url("./Components/imgHome.jpeg");
 }
 
 .titleImg {
@@ -29,7 +20,7 @@ img {
   color: rgb(59, 61, 80);
   font-size: 100px !important;
   z-index: -1;
-  position: fixed
+  position: fixed;
 }
 
 .doctors {
@@ -37,18 +28,16 @@ img {
   margin-top: 30%;
 }
 
-.doctors h2{
- color: white;
- border-bottom: 3px solid #2c2c29;
- border-radius: 5px;
+.doctors h2 {
+  color: white;
+  border-bottom: 3px solid #2c2c29;
+  border-radius: 5px;
 }
 .table-responsive {
   background-color: #a8b4be;
   padding: 2em;
   border-radius: 8px;
-}
-tr.hide-table-padding td {
-  padding: 0;
+  opacity: 88%;
 }
 
 .color-font {
@@ -57,11 +46,6 @@ tr.hide-table-padding td {
 
 .selected {
   background-color: #f7c4c4;
-}
-
-table {
-  padding: 0px;
-  border-collapse: collapse;
 }
 
 .tableAppointment {

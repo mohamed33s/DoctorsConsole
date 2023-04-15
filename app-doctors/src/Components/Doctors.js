@@ -21,8 +21,7 @@ export default function Doctors() {
         <table className="table">
           <thead>
             <tr className="color-font">
-              <th scope="col">ID</th>
-              <th scope="col">الاسم</th>
+              <th scope="col">الطبيب</th>
               <th scope="col">التخصص</th>
               <th scope="col">التقييم</th>
               <th scope="col"></th>
@@ -33,7 +32,6 @@ export default function Doctors() {
               .sort((a, b) => b.review - a.review)
               .map((item) => (
                 <tr className="color-font" key={item.id}>
-                  <td>{item.id}</td>
                   <td>{item.name}</td>
                   <td>{item.position}</td>
                   <td>{item.review}</td>
